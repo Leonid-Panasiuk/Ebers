@@ -1,0 +1,83 @@
+<!-- <mat-toolbar class="toolbar">
+    <mat-toolbar-row>
+        <a class="games-list" routerLink="/list-items">Games List
+            <mat-icon>youtube_searched_for</mat-icon></a>
+            <div class="flex-spacer"></div>
+        <a class="cart-link" routerLink="/cart-items">
+            <span>Cart</span>
+            <mat-icon class="cart-icon">shopping_cart</mat-icon>({{ cartService.getTotalQuantity() }})
+        </a>
+    </mat-toolbar-row>
+</mat-toolbar> -->
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+
+<div class="top">
+  <div class="container">
+    <div class="row">
+      <div class="col-6">
+        <a routerLink="/delivery">Доставка і оплата</a>
+        <a href="">Гарантія</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="top-2">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 d-flex align-items-center justify-content-center">
+        <div class="logo">
+          <img src="../assets/images/logo.png" alt="" class="img-fluid">
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+        <div class="header-text">
+          <p>Інтернет Магазин компанії Еберс</p>
+          <p>Якісні препарати - впевнений крок до здоров’я !</p>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
+        <div class="header-phones">
+          <span>
+            <i class="fas fa-phone"></i>
+            <a href="tel:093-536-53-13"><span class="head-number">(093)</span>-536-53-13</a>
+          </span>
+          <span>
+            <i class="fas fa-mobile-alt"></i>
+            <a href="tel:093-536-53-13"><span class="head-number">(093)</span>-536-53-13</a>
+          </span>
+          <a href=""><span class="comun">Замовити зворотній зв'язок</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="top-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-10 col-xl-10 d-flex justify-content-center">
+        <nav class="nav">
+          <ul class="nav-items">
+            <li><a href="">Продукція</a></li>
+            <li><a href="">Статті</a></li>
+            <li><a href="">Про компанію</a></li>
+            <li><a href="">Контакти</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col-12 col-sm-12 col-md-12 col-lg-2 col-xl-2 d-flex justify-content-center">
+        <a class="cart-link" routerLink="/cart-items">
+          <span>Кошик :</span>
+          <mat-icon class="cart-icon">shopping_cart</mat-icon>({{ cartService.getTotalQuantity() }})
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<router-outlet></router-outlet>

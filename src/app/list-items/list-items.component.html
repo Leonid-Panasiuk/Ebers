@@ -1,0 +1,45 @@
+<!-- <h1 class="text-center">Продукція</h1>
+<div class="container first-block">
+    <div class="row" *ngFor="let product of products">
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+            <img [src]="product.imageUrl" class="img-fluid main-game">
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+            <h2 class="name-of-game">{{product.name}}</h2>
+            <p class="main-game-desc">{{product.label}}</p>
+            <p><span class="game-price">Price:</span> {{product.price}}$ </p>
+            <button mat-raised-button color="warn" (click)="cardService.addToCart(product)">Buy</button>
+            <hr color="black">
+        </div>
+    </div>
+</div> -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 main-content">
+      <div class="heading-prod">
+        <h3>Продукція</h3>
+        <a href="">Дивитися все</a>
+      </div>
+    </div>
+  </div>
+  <div class="row pt-4">
+    <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3" *ngFor="let product of products">
+      <div class="card-product">
+        <img [src]="product.imageUrl" class="img-fluid">
+        <div class="raiting">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <a href="#" class="name-of-product">{{product.name}}</a>
+        <div class="price-wrap">
+          <p class="product-price"><span></span>{{product.price}}грн</p>
+          <button mat-button color="primary" class="buy-button" (click)="cardService.addToCart(product)">До кошика</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

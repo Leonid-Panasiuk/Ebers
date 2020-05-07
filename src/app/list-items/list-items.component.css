@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.heading-prod {
+  position: relative;
+  z-index: 2;
+  padding-top: 15px;
+}
+
+.heading-prod::after {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  right: 0;
+  height: 0.5em;
+  border-top: 2px solid rgba(142, 227, 193, 1);
+  z-index: -1;
+}
+
+.heading-prod h3 {
+  margin: 0;
+  display: inline-block;
+  font-size: 21px;
+  font-weight: 500;
+  background-color: white;
+}
+
+.heading-prod a {
+  padding: 0 10px;
+  color: #1660C9;
+  transition: all .3s;
+  background-color: white;
+}
+
+.heading-prod a::before {
+  padding: 0 5px 0 0;
+  color: #ccc;
+  content: "/\00a0";
+}
+
+.heading-prod a:hover {
+  color: red;
+}
+
+.card-product {
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  overflow: hidden;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 2px;
+  transition: all .4s;
+}
+
+.raiting {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+    color: goldenrod;
+}
+
+.card-product:hover {
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.75);
+}
+
+.card-product a {
+  color: #1660C9;
+}
+
+.product-price {
+  color: red;
+  text-align: center;
+}
+
+.price-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.price-wrap button {
+  margin-left: 7px;
+  border: 1px solid;
+  transition: all .3s;
+  padding: 0 5px;
+}
+
+.price-wrap button:hover {
+  color: green;
+}
+
+.price-wrap button:focus {
+  outline: none;
+}
