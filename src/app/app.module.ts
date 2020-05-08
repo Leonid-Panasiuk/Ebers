@@ -10,6 +10,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProductsService } from './products.service';
 import { CartService } from './cart.service';
 import { FormsModule } from '@angular/forms';
+import { ServerModule } from '@angular/platform-server';
+import { ModuleMapLoaderModule } from '@nguniversal/module-map-ngfactory-loader';
 import { DeliveryComponent } from './delivery/delivery.component';
 
 @NgModule({
@@ -24,7 +26,9 @@ import { DeliveryComponent } from './delivery/delivery.component';
     AppRoutingModule,
     MaterialModule,
     BrowserAnimationsModule,
-    FormsModule
+    FormsModule,
+    ServerModule,
+    ModuleMapLoaderModule
   ],
   providers: [ProductsService, CartService],
   bootstrap: [AppComponent]
