@@ -13,6 +13,9 @@ import { FormsModule } from '@angular/forms';
 // import { ServerModule } from '@angular/platform-server';
 // import { ModuleMapLoaderModule } from '@nguniversal/module-map-ngfactory-loader';
 import { DeliveryComponent } from './delivery/delivery.component';
+import { ProductsComponent } from './products/products.component';
+import { AboutComponent } from './about/about.component';
+import { ContactsComponent } from './contacts/contacts.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +23,9 @@ import { DeliveryComponent } from './delivery/delivery.component';
     ListItemsComponent,
     CartItemsComponent,
     DeliveryComponent,
+    ProductsComponent,
+    AboutComponent,
+    ContactsComponent,
   ],
   imports: [
     BrowserModule,

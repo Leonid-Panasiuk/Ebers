@@ -1,0 +1,46 @@
+<div class="container pt-3 pb-3 warning">
+  <div class="row">
+    <p>Цей <span class="warn">розділ</span> сайту містить інформацію про профілактично-гігієнічні засоби, біологічно активні
+      добавки та інше, їх властивості, способи застосування, та іншу спеціалізовану інформацію, яка
+      призначена для фахівців у галузі охорони здоров'я. Інформація про засоби, що міститься в
+      цьому розділі, не є керівництвом для самостійної діагностики або лікування.
+      ПП «Еберс» не несе відповідальності за можливі негативні наслідки, що виникли в результаті
+      самостійного використання інформації з даного розділу.
+      Використовуючи інформацію з даного розділу, ви робите це самостійно, розуміючи що:
+      самолікування може завдати шкоди вашому здоров'ю. Перед застосуванням лікарських
+      засобів необхідно ознайомитися з інструкцією і проконсультуватися з лікарем.</p>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12 main-content">
+      <div class="heading-prod">
+        <a routerLink="/list-items">Головна</a>
+        <h3>Продукція</h3>
+      </div>
+    </div>
+  </div>
+  <div class="row pt-4">
+    <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3" *ngFor="let product of products">
+      <div class="card-product">
+        <img [src]="product.imageUrl" class="img-fluid">
+        <div class="raiting">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <a href="#" class="name-of-product">{{product.name}}</a>
+        <div class="price-wrap">
+          <p class="product-price"><span></span>{{product.price}}грн</p>
+          <button mat-button color="primary" class="buy-button" (click)="cardService.addToCart(product)">До
+            кошика</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>

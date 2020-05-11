@@ -40,10 +40,11 @@ a:hover {
   background-color: white;
 }
 
-.heading-prod a::before {
+.heading-prod a::after {
   padding: 0 5px 0 0;
   color: #ccc;
   content: "/\00a0";
+  margin-left: 15px;
 }
 
 .heading-prod a:hover {
@@ -61,12 +62,12 @@ a:hover {
 }
 
 .raiting {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 8px;
-    color: goldenrod;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8px;
+  color: goldenrod;
 }
 
 .card-product:hover {
@@ -102,4 +103,20 @@ a:hover {
 
 .price-wrap button:focus {
   outline: none;
+}
+
+.warning p {
+  text-align: justify;
+  padding: 0 25px;
+}
+
+.warn {
+  text-transform: uppercase;
+  color: red;
+}
+
+@media only screen and (max-width: 425px) {
+  .warning p {
+    word-spacing:-3px;
+  }
 }
