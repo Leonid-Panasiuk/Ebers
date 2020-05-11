@@ -7,8 +7,12 @@ import { CartService } from './cart.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  
+
   constructor(private cartService: CartService) { }
-     
+
+  onActivate(event) {
+    window.scroll(0, 0);
+  }
+
 }
 
