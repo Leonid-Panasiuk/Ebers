@@ -16,6 +16,7 @@ import { DeliveryComponent } from './delivery/delivery.component';
 import { ProductsComponent } from './products/products.component';
 import { AboutComponent } from './about/about.component';
 import { ContactsComponent } from './contacts/contacts.component';
+import { GiluronComponent } from './giluron/giluron.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { ContactsComponent } from './contacts/contacts.component';
     ProductsComponent,
     AboutComponent,
     ContactsComponent,
+    GiluronComponent,
   ],
   imports: [
     BrowserModule,

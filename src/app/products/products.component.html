@@ -32,7 +32,7 @@
           <i class="fas fa-star"></i>
           <i class="fas fa-star"></i>
         </div>
-        <a href="#" class="name-of-product">{{product.name}}</a>
+        <a matTooltip="Перейти" *ngIf="product.id==1" routerLink="/giluron" class="name-of-product">{{product.name}}</a>
         <div class="price-wrap">
           <p class="product-price"><span></span>{{product.price}}грн</p>
           <button mat-button color="primary" class="buy-button" (click)="cardService.addToCart(product)">До

@@ -8,6 +8,16 @@ a:hover {
   text-decoration: none;
 }
 
+.name-of-product {
+  font-size: 20px;
+  font-weight: 600;
+  transition: all .3s;
+}
+
+.links-container a:hover {
+  color: red;
+}
+
 .heading-prod {
   position: relative;
   z-index: 2;
@@ -61,12 +71,12 @@ a:hover {
 }
 
 .raiting {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 8px;
-    color: goldenrod;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8px;
+  color: goldenrod;
 }
 
 .card-product:hover {
