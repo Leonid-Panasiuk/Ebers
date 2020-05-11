@@ -12,8 +12,8 @@ import { GiluronComponent } from './giluron/giluron.component';
 const routes: Routes = [
     {
         path: '',
-        redirectTo: 'list-items',
-        pathMatch: 'full'
+        redirectTo: '/list-items',
+        pathMatch: 'full',
     },
     {
         path: 'list-items',
