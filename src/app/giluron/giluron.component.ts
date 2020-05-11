@@ -14,11 +14,12 @@ export class GiluronComponent implements OnInit {
   private cart: CartItem[];
 
 
-  constructor(private productsService: ProductsService, private cartService: CartService) { }
+  constructor(private productsService: ProductsService, private cartService: CartService ) { }
 
   ngOnInit() {
     this.products = this.productsService.getProducts();
     this.cart = this.cartService.getCartItems();
+   
   }
 
 }
