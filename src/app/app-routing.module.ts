@@ -9,10 +9,15 @@ import { ContactsComponent } from './contacts/contacts.component';
 import { GiluronComponent } from './giluron/giluron.component';
 
 
-const routes : Routes = [
+const routes: Routes = [
+    {
+        path: '',
+        redirectTo: 'list-items',
+        pathMatch: 'full'
+    },
     {
         path: 'list-items',
-        component : ListItemsComponent
+        component: ListItemsComponent
     },
     {
         path: 'cart-items',
@@ -38,11 +43,11 @@ const routes : Routes = [
         path: 'giluron',
         component: GiluronComponent
     },
-    {
-        path: '',
-        redirectTo: 'list-items',
-        pathMatch: 'full'
-    }
+    // {
+    //     path: '',
+    //     redirectTo: 'list-items',
+    //     pathMatch: 'full'
+    // }
 ];
 
 
@@ -50,5 +55,5 @@ const routes : Routes = [
 @NgModule({
     imports: [RouterModule.forRoot(routes)],
     exports: [RouterModule]
-  })
-  export class AppRoutingModule { }
+})
+export class AppRoutingModule { }
