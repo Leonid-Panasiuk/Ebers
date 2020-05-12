@@ -158,10 +158,28 @@ a:hover {
 
 .cart-link span {
   color: rgba(37, 97, 198, 1);
+  color: #333;
+  font-size: 17px;
+  transition: all .3s;
+}
+
+.cart-link span:hover {
+  color: red;
 }
 
 .cart-icon {
-  color: rgba(37, 97, 198, 1);
+  color: #111;
+  margin: 0 10px;
+  transition: all .3s;
+}
+
+.cart-icon:hover {
+  color: red;
+}
+
+.basket {
+  font-size: 17px;
+  color: #333;
 }
 
 footer {
@@ -201,8 +219,9 @@ footer img {
 .footer-left img {
   width: 40px;
   margin: 10px;
-
 }
+
+
 
 @media(max-width: 900px) {
   .footer-left {
