@@ -7,6 +7,10 @@ import { ProductsComponent } from './products/products.component';
 import { AboutComponent } from './about/about.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { GiluronComponent } from './giluron/giluron.component';
+import { NormeraComponent } from './normera/normera.component';
+import { RegexinComponent } from './regexin/regexin.component';
+import { FizormComponent } from './fizorm/fizorm.component';
+import { GuaranteesComponent } from './guarantees/guarantees.component';
 
 
 
@@ -29,6 +33,10 @@ const routes: Routes = [
         component: DeliveryComponent
     },
     {
+        path: 'guarantees',
+        component: GuaranteesComponent
+    },
+    {
         path: 'products',
         component: ProductsComponent
     },
@@ -43,6 +51,18 @@ const routes: Routes = [
     {
         path: 'giluron',
         component: GiluronComponent
+    },
+    {
+        path: 'normera',
+        component: NormeraComponent
+    },
+    {
+        path: 'regexin',
+        component: RegexinComponent
+    },
+    {
+        path: 'fizorm',
+        component: FizormComponent
     },
     // {
     //     path: '',

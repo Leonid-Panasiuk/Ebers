@@ -1,10 +1,4 @@
-<!-- <div *ngFor="let product of products; let i=index;">
-  <p *ngIf="product.id==1">{{ product.name }}</p>
-  <p *ngIf="product.id==1">{{ product.price }} грн.</p>
-  <img *ngIf="product.id==1" [src]="product.imageUrl" class="img-fluid">
-  <button *ngIf="product.id==1" mat-button color="primary" class="buy-button" (click)="cartService.addToCart(product)">До кошика</button>
-</div> -->
-<router-outlet (activate)="scrollTop($event)"></router-outlet>
+
 <div class="container">
   <div class="row">
     <div class="col-sm-12 main-content">
@@ -18,58 +12,61 @@
 </div>
 
 <div class="line"></div>
-<div class="container pt-5" *ngFor="let product of products; let i=index;">
+<div class="container pt-2" *ngFor="let product of products; let i=index;">
   <div class="row">
-    <div class="col-12 col-sm-12 col-md-5 col-xl-5 col-lg-5 col-12 d-flex align-items-center">
+    <div class="col-12 col-sm-12 col-md-12 col-xl-5 col-lg-5 d-flex align-items-center">
       <img *ngIf="product.id==1" [src]="product.imageUrl" class="img-fluid">
     </div>
-    <div class="col-12 col-sm-12 col-md-7 col-xl-7 col-lg-7 d-flex flex-column" *ngIf="product.id==1">
+    <div class="col-12 col-sm-12 col-md-12 col-xl-7 col-lg-7 d-flex flex-column" *ngIf="product.id==1">
       <p>Гілурон — засіб профілактично-гігієнічний, має регенеративні, антисептичні, імуностимулюючі,
         протизапальні властивості, та сприяє швидкому відновленню слизової оболонки піхви.
         Гіалуронова кислота як природний полісахарид обволікає слизову оболонку піхви, створюючи
         захисний бар'єр, сприяє загоєнню слизової оболонки піхви, усуває запалення (зменшує
         почервоніння та роздратування), зміцнює стінки піхви після діатермокоагуляції, лазерної терапії і
-        кріотерапії шийки матки або піхви, проявляє зволожуючі властивості при сухості піхви.</p>
-      <table>
-        <tr>
-          <td class=dots>
-            <span class=content>Бренд:</span>
-          </td>
-          <td>
-            <span class=content><a routerLink="/products">Еберс</a></span>
-          </td>
-        </tr>
-        <tr>
-          <td class=dots>
-            <span class=content>Доступно:</span>
-          </td>
-          <td>
-            <span class=content>Є в наявності</span>
-          </td>
-        </tr>
-        <tr>
-          <td class=dots>
-            <span class=content>Кількість в упаковці:</span>
-          </td>
-          <td>
-            <span class=content>5 засобів по 2 блістери у пачці</span>
-          </td>
-        </tr>
-        <tr>
-          <td class=dots>
-            <span class=content>Упаковка на:</span>
-          </td>
-          <td>
-            <span class=content>Не менше 5 діб</span>
-          </td>
-        </tr>
-      </table>
+        кріотерапії шийки матки або піхви, проявляє зволожуючі властивості при сухості піхви.
+      </p>
+      <div class="row">
+        <div class="col-12">
+          <table>
+            <tr>
+              <td class=dots>
+                <span class=content>Бренд:</span>
+              </td>
+              <td>
+                <span class=content><a routerLink="/products">Еберс</a></span>
+              </td>
+            </tr>
+            <tr>
+              <td class=dots>
+                <span class=content>Доступно:</span>
+              </td>
+              <td>
+                <span class=content>Є в наявності</span>
+              </td>
+            </tr>
+            <tr>
+              <td class=dots>
+                <span class=content>Кількість в упаковці:</span>
+              </td>
+              <td>
+                <span class=content>5 засобів по 2 блістери у пачці</span>
+              </td>
+            </tr>
+            <tr>
+              <td class=dots>
+                <span class=content>Упаковка на:</span>
+              </td>
+              <td>
+                <span class=content>Не менше 5 діб</span>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
       <div class="price-container">
         <p *ngIf="product.id==1">Вартість: <span class="price-big">{{ product.price }} грн.</span></p>
         <span class="text-success"><i class="fas fa-check"></i>Є в наявності</span>
       </div>
-      <!-- <div class="cart-text">Кількість: <input class="cart-input" type="number" min="1"
-        (change)="cartService.quantityChanged()" [(ngModel)]="product.quantity"/></div> -->
       <button *ngIf="product.id==1" mat-button color="primary" class="buy-button"
         (click)="cartService.addToCart(product)">До кошика</button>
     </div>

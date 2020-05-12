@@ -17,6 +17,10 @@ import { ProductsComponent } from './products/products.component';
 import { AboutComponent } from './about/about.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { GiluronComponent } from './giluron/giluron.component';
+import { NormeraComponent } from './normera/normera.component';
+import { RegexinComponent } from './regexin/regexin.component';
+import { FizormComponent } from './fizorm/fizorm.component';
+import { GuaranteesComponent } from './guarantees/guarantees.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +32,10 @@ import { GiluronComponent } from './giluron/giluron.component';
     AboutComponent,
     ContactsComponent,
     GiluronComponent,
+    NormeraComponent,
+    RegexinComponent,
+    FizormComponent,
+    GuaranteesComponent,
   ],
   imports: [
     BrowserModule,

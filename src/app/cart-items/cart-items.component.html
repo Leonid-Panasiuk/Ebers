@@ -1,12 +1,67 @@
 <a routerLink="/list-items">Головна</a>
 
-<div class="cart-container" *ngFor="let cartItem of cart; index as i">
-    <button disabled mat-mini-fab class="cart-avatar"
-        [ngStyle]="{ 'background-image': 'url(' + cartItem.product.imageUrl + ')'}"></button>
-    <div class="cart-text">Title: {{cartItem.product.name}}</div>
-    <div class="cart-text">Quantity: <input class="cart-input" type="number" min="1" (change)="cartService.quantityChanged()"
-            [(ngModel)]="cartItem.quantity" /></div>
-    <div class="cart-text">Price: {{cartItem.product.price * cartItem.quantity}}$</div>
-    <button (click)="cartService.removeFromCart(i)" class="btn btn-danger">Remove</button>
+
+
+<!-- <div class="container">
+  <div class="row">
+    <div class="col-sm-12 d-flex justify-content-center">
+      <div class="col-sm-4 cart-container" *ngFor="let cartItem of cart; index as i">
+        <img [src]="cartItem.product.imageUrl" class="img-fluid">
+        <div class="cart-text">Препарат - <span>{{cartItem.product.name}}</span></div>
+        <div class="cart-text">Кількість: <input class="cart-input" type="number" min="1"
+            (change)="cartService.quantityChanged()" [(ngModel)]="cartItem.quantity" /></div>
+        <div class="cart-text">Ціна: {{cartItem.product.price * cartItem.quantity}}грн</div>
+        <button (click)="cartService.removeFromCart(i)" class="btn btn-danger">Видалити</button>
+      </div>
+    </div>
+  </div>
+</div> -->
+<div class="total-price">Загальна ціна: {{cartService.getTotalPrice()}}грн</div>
+
+
+<div class="container" *ngFor="let cartItem of cart; index as i">
+  <div class="row">
+    <div class="col-12 col-md-12 col-lg-12 col-xl-12">
+      <div class="row d-flex align-items-center no-gutters">
+        <div class="col-lg-2 col-md-3 col-6 d-flex justify-content-center col-cart">
+          <img [src]="cartItem.product.imageUrl" class="img-fluid">
+        </div>
+        <div class="col-lg-2 col-md-3 col-6 d-flex justify-content-center col-cart">
+          <div class="cart-text">Препарат - <span>{{cartItem.product.name}}</span></div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-4 d-flex justify-content-center col-cart">
+          <div class="cart-text">Кількість: <input class="cart-input" type="number" min="1"
+              (change)="cartService.quantityChanged()" [(ngModel)]="cartItem.quantity" /></div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-4 d-flex justify-content-center col-cart">
+          <div class="cart-text">Ціна: {{cartItem.product.price * cartItem.quantity}}грн</div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-4 d-flex justify-content-center col-cart">
+          <button (click)="cartService.removeFromCart(i)" class="btn btn-danger del-btn">Видалити</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-<div class="total-price">Total Price: {{cartService.getTotalPrice()}}$</div>
+
+
+
+
+
+
+
+<!-- <div class="container">
+   <div class="row">
+    <div class="cart-container" *ngFor="let cartItem of cart; index as i">
+
+        <img [src]="cartItem.product.imageUrl" class="img-fluid">
+        <div class="cart-text">Препарат - {{cartItem.product.name}}</div>
+        <div class="cart-text">Кількість: <input class="cart-input" type="number" min="1"
+            (change)="cartService.quantityChanged()" [(ngModel)]="cartItem.quantity" /></div>
+        <div class="cart-text">Ціна: {{cartItem.product.price * cartItem.quantity}}грн</div>
+        <button (click)="cartService.removeFromCart(i)" class="btn btn-danger">Видалити</button>
+      
+        <div class="total-price">Загальна ціна: {{cartService.getTotalPrice()}}грн</div>
+      </div>
+   </div>
+</div> -->
