@@ -10,8 +10,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProductsService } from './products.service';
 import { CartService } from './cart.service';
 import { FormsModule } from '@angular/forms';
-// import { ServerModule } from '@angular/platform-server';
-// import { ModuleMapLoaderModule } from '@nguniversal/module-map-ngfactory-loader';
 import { DeliveryComponent } from './delivery/delivery.component';
 import { ProductsComponent } from './products/products.component';
 import { AboutComponent } from './about/about.component';
@@ -21,6 +19,7 @@ import { NormeraComponent } from './normera/normera.component';
 import { RegexinComponent } from './regexin/regexin.component';
 import { FizormComponent } from './fizorm/fizorm.component';
 import { GuaranteesComponent } from './guarantees/guarantees.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -42,7 +41,8 @@ import { GuaranteesComponent } from './guarantees/guarantees.component';
     AppRoutingModule,
     MaterialModule,
     BrowserAnimationsModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [ProductsService, CartService],
   bootstrap: [AppComponent]

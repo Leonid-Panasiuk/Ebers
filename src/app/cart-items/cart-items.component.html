@@ -1,28 +1,16 @@
-<a routerLink="/list-items">Головна</a>
-
-
-
-<!-- <div class="container">
-  <div class="row">
-    <div class="col-sm-12 d-flex justify-content-center">
-      <div class="col-sm-4 cart-container" *ngFor="let cartItem of cart; index as i">
-        <img [src]="cartItem.product.imageUrl" class="img-fluid">
-        <div class="cart-text">Препарат - <span>{{cartItem.product.name}}</span></div>
-        <div class="cart-text">Кількість: <input class="cart-input" type="number" min="1"
-            (change)="cartService.quantityChanged()" [(ngModel)]="cartItem.quantity" /></div>
-        <div class="cart-text">Ціна: {{cartItem.product.price * cartItem.quantity}}грн</div>
-        <button (click)="cartService.removeFromCart(i)" class="btn btn-danger">Видалити</button>
-      </div>
-    </div>
+<div class="container-fluid">
+  <div class="row link_to_main">
+    <a routerLink="/list-items">Головна<span>/</span></a>
+    <p>Кошик</p>
   </div>
-</div> -->
-<div class="total-price">Загальна ціна: {{cartService.getTotalPrice()}}грн</div>
+</div>
+<div class="line"></div>
 
 
-<div class="container" *ngFor="let cartItem of cart; index as i">
+<div class="container pt-3">
   <div class="row">
-    <div class="col-12 col-md-12 col-lg-12 col-xl-12">
-      <div class="row d-flex align-items-center no-gutters">
+    <div class="col-12 col-md-8 col-lg-8 col-xl-8">
+      <div class="row d-flex align-items-center no-gutters" *ngFor="let cartItem of cart; index as i">
         <div class="col-lg-2 col-md-3 col-6 d-flex justify-content-center align-items-center col-cart">
           <img [src]="cartItem.product.imageUrl" class="img-fluid">
         </div>
@@ -39,7 +27,28 @@
         <div class="col-lg-2 col-md-3 col-12 d-flex justify-content-center align-items-center col-cart">
           <button (click)="cartService.removeFromCart(i)" class="btn btn-danger del-btn">Видалити</button>
         </div>
+        <div class="line"></div>
       </div>
+    </div>
+    <div class="col-12 col-md-4 col-lg-4 col-xl-4">
+      <div class="total-price">Загальна ціна: {{cartService.getTotalPrice()}}грн</div>
+      <form [formGroup]="userForm" (submit)="onSubmit()" class="mail-form" method="get">
+        <div class="row">
+          <div class="col-md-12 ">
+            <div class="wrap-input100 rs1-wrap-input100">
+              <input formControlName="name" class="input100" type="text" name="name" placeholder="Введіть Ваше ім'я*" required>
+              <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 rs1-wrap-input100">
+              <input formControlName="phone" class="input100" type="text" name="name" placeholder="Введіть Ваш номер телефону*" required>
+              <span class="focus-input100"></span>
+            </div>
+          </div>
+          <div class="col-md-12 d-flex justify-content-center"><p class="errorMessage" style="color:red" *ngIf="!userForm.valid">Заповніть усі необхідні поля ↑</p></div>
+          <button [disabled]="!userForm.valid" type="submit" class="btn btn-success submit-btn forms-btn">Оформити замовлення</button>
+        </div>
+      </form>
     </div>
   </div>
 </div>

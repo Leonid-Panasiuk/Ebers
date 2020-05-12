@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CartService, CartItem } from '../cart.service';
+import { FormControl, FormGroup, Validators, FormBuilder, NgForm } from '@angular/forms'
+
 
 @Component({
   selector: 'app-cart-items',
@@ -7,13 +9,29 @@ import { CartService, CartItem } from '../cart.service';
   styleUrls: ['./cart-items.component.css']
 })
 export class CartItemsComponent implements OnInit {
+ 
 
   private cart: CartItem[];
 
-  constructor(private cartService: CartService) { }
+  user = {
+    name: '',
+    phone: ''
+  }
+
+  formValue : FormGroup;
+
+  constructor(private cartService: CartService, private fb: FormBuilder) { }
 
   ngOnInit() {
     this.cart = this.cartService.getCartItems();
+  }
+
+  userForm = new FormGroup({
+    name: new FormControl('', [Validators.required]),
+    phone: new FormControl('', [Validators.required])
+  });
+  onSubmit() {
+    console.log(this.userForm.value);
   }
 
 }
