@@ -9,6 +9,17 @@ a {
 
 }
 
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+.about-bg {
+  background-image: url(/../assets/images/about-bg.jpg);
+  background-size: cover;
+}
+
 .main-content {
   background-color: transparent;
   border-bottom: 1px solid #adadad;
@@ -30,13 +41,14 @@ a:hover {
 }
 
 .about-container {
-  margin-bottom: 40px;
+  padding-bottom: 25px;
 }
 
 .about-container p {
-  font-size: 22px;
-  text-align: justify;
-  word-spacing: -3px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.8;
+  font-weight: 300;
 }
 
 .about-container img {

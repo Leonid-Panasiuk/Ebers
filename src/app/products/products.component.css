@@ -107,6 +107,11 @@ a:hover {
   text-align: center;
 }
 
+.desc p {
+  font-size: 13px;
+  text-align: center;
+}
+
 .all-cards {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -157,8 +162,10 @@ a:hover {
 }
 
 .warning p {
-  text-align: justify;
+  text-align: center;
   padding: 0 25px;
+  font-size: 15px;
+  line-height: 1.8;
 }
 
 .warn {
@@ -168,6 +175,6 @@ a:hover {
 
 @media only screen and (max-width: 425px) {
   .warning p {
-    word-spacing: -3px;
+    word-spacing: 2px;
   }
 }

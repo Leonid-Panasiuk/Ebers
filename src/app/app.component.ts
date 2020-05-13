@@ -11,7 +11,7 @@ export class AppComponent {
   constructor(private cartService: CartService) { }
 
   onActivate(event) {
-    window.scroll(0, 0);
+    window.scroll(100, 100);
   }
 
 }

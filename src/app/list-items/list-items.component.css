@@ -15,7 +15,7 @@ a:hover {
   background-repeat: no-repeat;
 } */
 
-.list-items-bg {
+/* .list-items-bg {
   position: relative;
 }
 
@@ -30,7 +30,7 @@ a:hover {
   right: 0;
   position: absolute;
   z-index: -1;
-}
+} */
 
 .name-of-product {
   font-size: 20px;
