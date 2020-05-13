@@ -59,6 +59,57 @@ a:hover {
   padding: 10px;
   border-radius: 2px;
   transition: all .4s;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-product a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+.card-product img {
+  position: relative;
+  height: 200px;
+  width: 200px;
+}
+
+.name-of-product {
+  background-color: #FFFFFF;
+  color: black;
+  padding: 15px 25px;
+  border-radius: 100px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 13px;
+  border: none;
+  transition: all .5s;
+  margin-bottom: 10px;
+}
+
+.name-of-product:hover {
+  background: rgb(21, 151, 86);
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.75);
+  color: black;
+  border: none;
+}
+
+.desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  margin-top: 19px;
+  text-align: center;
+}
+
+.all-cards {
+  margin-top: 10px;
 }
 
 .raiting {
@@ -70,9 +121,9 @@ a:hover {
   color: goldenrod;
 }
 
-.card-product:hover {
+/* .card-product:hover {
   box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.75);
-}
+} */
 
 .card-product a {
   color: #1660C9;
@@ -117,6 +168,6 @@ a:hover {
 
 @media only screen and (max-width: 425px) {
   .warning p {
-    word-spacing:-3px;
+    word-spacing: -3px;
   }
 }

@@ -8,6 +8,13 @@ a:hover {
   text-decoration: none;
 }
 
+.list-items-bg {
+  background-image: url(/../assets/images/list-items-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .name-of-product {
   font-size: 20px;
   font-weight: 600;
