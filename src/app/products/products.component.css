@@ -75,6 +75,7 @@ a:hover {
 .card-product img {
   height: 300px;
   width: 200px;
+  height: auto;
 }
 
 .name-of-product {
