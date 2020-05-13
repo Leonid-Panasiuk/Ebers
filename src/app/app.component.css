@@ -208,6 +208,13 @@ footer img {
 .footer-container p {
   max-width: 50%;
   margin-left: 20px;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-container p span {
+  text-align: center;
 }
 
 .footer-container img {

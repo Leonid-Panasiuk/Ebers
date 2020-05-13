@@ -10,7 +10,6 @@ import { GiluronComponent } from './giluron/giluron.component';
 import { NormeraComponent } from './normera/normera.component';
 import { RegexinComponent } from './regexin/regexin.component';
 import { FizormComponent } from './fizorm/fizorm.component';
-import { GuaranteesComponent } from './guarantees/guarantees.component';
 
 
 
@@ -31,10 +30,6 @@ const routes: Routes = [
     {
         path: 'delivery',
         component: DeliveryComponent
-    },
-    {
-        path: 'guarantees',
-        component: GuaranteesComponent
     },
     {
         path: 'products',

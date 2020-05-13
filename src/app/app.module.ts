@@ -18,7 +18,6 @@ import { GiluronComponent } from './giluron/giluron.component';
 import { NormeraComponent } from './normera/normera.component';
 import { RegexinComponent } from './regexin/regexin.component';
 import { FizormComponent } from './fizorm/fizorm.component';
-import { GuaranteesComponent } from './guarantees/guarantees.component';
 import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
@@ -34,7 +33,6 @@ import { ReactiveFormsModule } from '@angular/forms';
     NormeraComponent,
     RegexinComponent,
     FizormComponent,
-    GuaranteesComponent,
   ],
   imports: [
     BrowserModule,
