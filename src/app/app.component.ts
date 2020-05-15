@@ -13,6 +13,5 @@ export class AppComponent {
   onActivate(event) {
     window.scroll(100, 100);
   }
-
 }
 

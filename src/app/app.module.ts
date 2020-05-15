@@ -19,6 +19,7 @@ import { NormeraComponent } from './normera/normera.component';
 import { RegexinComponent } from './regexin/regexin.component';
 import { FizormComponent } from './fizorm/fizorm.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     MaterialModule,
     BrowserAnimationsModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    SlickCarouselModule
   ],
   providers: [ProductsService, CartService],
   bootstrap: [AppComponent]
