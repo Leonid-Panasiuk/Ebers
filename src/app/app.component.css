@@ -21,8 +21,6 @@ a:hover {
 
 }
 
-/* TOP ON ALL PAGES */
-
 .top a {
   color: #000;
   font-size: 12px;
@@ -38,7 +36,7 @@ a:hover {
 }
 
 .top-2 {
-  background-color: #fff;
+  background: linear-gradient(0deg, rgba(142, 227, 193, 1) 100%, rgba(228, 182, 14, 1) 100%, rgba(233, 177, 10, 1) 100%);
 }
 
 .top-2 .container {
@@ -290,4 +288,11 @@ footer img {
     font-size: 15px;
   }
 
+}
+
+@media(max-width: 560px) {
+  .nav-items {
+    display: flex;
+    flex-direction: column;
+  }
 }
