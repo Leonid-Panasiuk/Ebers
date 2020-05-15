@@ -18,8 +18,8 @@ a:hover {
   border-bottom: 1px solid rgb(108, 196, 161);
   background: rgb(142, 227, 193);
   background: linear-gradient(0deg, rgba(142, 227, 193, 1) 100%, rgba(228, 182, 14, 1) 100%, rgba(233, 177, 10, 1) 100%);
-
 }
+
 
 .top a {
   color: #000;
@@ -37,6 +37,8 @@ a:hover {
 
 .top-2 {
   background: linear-gradient(0deg, rgba(142, 227, 193, 1) 100%, rgba(228, 182, 14, 1) 100%, rgba(233, 177, 10, 1) 100%);
+  border-bottom-right-radius: 400px 30px;
+  border-bottom-left-radius: 400px 30px;
 }
 
 .top-2 .container {
@@ -71,6 +73,10 @@ a:hover {
 
 .head-number {
   font-weight: normal;
+}
+
+.header-phones span {
+  margin-top: 10px;
 }
 
 .header-phones span a {
@@ -140,6 +146,7 @@ a:hover {
 .nav-items {
   list-style: none;
   display: flex;
+  border-top: 1px solid;
 }
 
 .nav-items a {
