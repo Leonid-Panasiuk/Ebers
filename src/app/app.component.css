@@ -184,6 +184,7 @@ a:hover {
   color: #111;
   margin: 0 10px;
   transition: all .3s;
+  width: 40px;
 }
 
 .cart-icon:hover {

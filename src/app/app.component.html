@@ -59,7 +59,9 @@
       <div class="col-12 d-flex justify-content-center">
         <a class="cart-link" routerLink="/cart-items">
           <span class="basket">Кошик :</span>
-          <mat-icon class="cart-icon">shopping_basket</mat-icon><span
+          <!-- <mat-icon class="cart-icon">shopping_basket</mat-icon><span
+            class="quantity">({{ cartService.getTotalQuantity() }})</span> -->
+            <img src="../assets/images/commerce.png" class="cart-icon"><span
             class="quantity">({{ cartService.getTotalQuantity() }})</span>
         </a>
       </div>
