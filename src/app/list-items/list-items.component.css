@@ -61,6 +61,14 @@ a:hover {
   z-index: -1;
 } */
 
+
+.mortar {
+  
+  margin-right: 12px;
+  background-color: #fff;
+  color: rgb(114, 145, 211);
+}
+
 .name-of-product {
   font-size: 15px;
   font-weight: 600;

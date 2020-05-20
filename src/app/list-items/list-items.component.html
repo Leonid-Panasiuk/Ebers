@@ -2,19 +2,22 @@
   <div class="slider">
     <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
       <div ngxSlickItem *ngFor="let slide of slides" class="slide">
-        <div *ngIf="slide.id==1" class="one-slide" class="img-fluid slide-img" [ngStyle]="{ 'background-image': 'url(' + slide.img + ')'}">
+        <div *ngIf="slide.id==1" class="one-slide" class="img-fluid slide-img"
+          [ngStyle]="{ 'background-image': 'url(' + slide.img + ')'}">
           <div class="slider-text">
             <p>Декілька</p>
             <p>Слів</p>
           </div>
         </div>
-        <div *ngIf="slide.id==2" class="sec-slide" class="img-fluid slide-img" [ngStyle]="{ 'background-image': 'url(' + slide.img + ')'}">
+        <div *ngIf="slide.id==2" class="sec-slide" class="img-fluid slide-img"
+          [ngStyle]="{ 'background-image': 'url(' + slide.img + ')'}">
           <div class="slider-text">
             <p>Декілька</p>
             <p>Слів</p>
           </div>
         </div>
-        <div *ngIf="slide.id==3" class="third-slide" class="img-fluid slide-img" [ngStyle]="{ 'background-image': 'url(' + slide.img + ')'}">
+        <div *ngIf="slide.id==3" class="third-slide" class="img-fluid slide-img"
+          [ngStyle]="{ 'background-image': 'url(' + slide.img + ')'}">
           <div class="slider-text">
             <p>Декілька</p>
             <p>Слів</p>
@@ -23,56 +26,58 @@
       </div>
     </ngx-slick-carousel>
   </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12 main-content">
-        <div class="heading-prod">
-          <h3>Продукція</h3>
-          <a routerLink="/products">Дивитися все</a>
-        </div>
-      </div>
-    </div>
-    <div class="row pt-4">
-      <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3" *ngFor="let product of products">
-        <div class="card-product">
-          <a matTooltip="Перейти" *ngIf="product.id==1" routerLink="/giluron"><img [src]="product.imageUrl"
-              class="img-fluid"></a>
-          <a matTooltip="Перейти" *ngIf="product.id==2" routerLink="/normera"><img [src]="product.imageUrl"
-              class="img-fluid"></a>
-          <a matTooltip="Перейти" *ngIf="product.id==3" routerLink="/regexin"><img [src]="product.imageUrl"
-              class="img-fluid"></a>
-          <a matTooltip="Перейти" *ngIf="product.id==4" routerLink="/fizorm"><img [src]="product.imageUrl"
-              class="img-fluid"></a>
-          <div class="raiting">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-          <div class="links-container">
-            <a matTooltip="Перейти" *ngIf="product.id==1" routerLink="/giluron"
-              class="name-of-product">{{product.name}}</a>
-            <a matTooltip="Перейти" *ngIf="product.id==2" routerLink="/normera"
-              class="name-of-product">{{product.name}}</a>
-            <a matTooltip="Перейти" *ngIf="product.id==3" routerLink="/regexin"
-              class="name-of-product">{{product.name}}</a>
-            <a matTooltip="Перейти" *ngIf="product.id==4" routerLink="/fizorm"
-              class="name-of-product">{{product.name}}</a>
-          </div>
-          <div class="price-wrap">
-            <p class="product-price"><span></span>{{product.price}}грн</p>
-            <button mat-button color="primary" class="buy-button" (click)="cardService.addToCart(product)">До
-              кошика</button>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 main-content">
+          <div class="heading-prod">
+            <i class="fas fa-mortar-pestle fa-3x mortar"></i>
+            <h3>Продукція</h3>
+            <a routerLink="/products">Дивитися все</a>
           </div>
         </div>
       </div>
+      <div class="row pt-4">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3" *ngFor="let product of products">
+          <div class="card-product">
+            <a matTooltip="Перейти" *ngIf="product.id==1" routerLink="/giluron"><img [src]="product.imageUrl"
+                class="img-fluid"></a>
+            <a matTooltip="Перейти" *ngIf="product.id==2" routerLink="/normera"><img [src]="product.imageUrl"
+                class="img-fluid"></a>
+            <a matTooltip="Перейти" *ngIf="product.id==3" routerLink="/regexin"><img [src]="product.imageUrl"
+                class="img-fluid"></a>
+            <a matTooltip="Перейти" *ngIf="product.id==4" routerLink="/fizorm"><img [src]="product.imageUrl"
+                class="img-fluid"></a>
+            <div class="raiting">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="links-container">
+              <a matTooltip="Перейти" *ngIf="product.id==1" routerLink="/giluron"
+                class="name-of-product">{{product.name}}</a>
+              <a matTooltip="Перейти" *ngIf="product.id==2" routerLink="/normera"
+                class="name-of-product">{{product.name}}</a>
+              <a matTooltip="Перейти" *ngIf="product.id==3" routerLink="/regexin"
+                class="name-of-product">{{product.name}}</a>
+              <a matTooltip="Перейти" *ngIf="product.id==4" routerLink="/fizorm"
+                class="name-of-product">{{product.name}}</a>
+            </div>
+            <div class="price-wrap">
+              <p class="product-price"><span></span>{{product.price}}грн</p>
+              <button mat-button color="primary" class="buy-button" (click)="cardService.addToCart(product)">До
+                кошика</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
 </div>
 
 <div class="container news pb-5">
-  <h3>Тут добавити якісь статті відповідно до нашого сайту(в такому стилі вроді нормально). Коли буду робити остаточний варіант,то все вирівняю гарно</h3>
+  <h3>Тут добавити якісь статті відповідно до нашого сайту(в такому стилі вроді нормально). Коли буду робити остаточний
+    варіант,то все вирівняю гарно</h3>
   <div class="row pt-4">
     <div class="col-4 col-back-img">
       <p>Test at Home</p>
@@ -81,12 +86,14 @@
     <div class="col-4 test">
       <img src="../../assets/images/news-2.jpg" class="img-fluid" alt="">
       <h4>Standard card</h4>
-      <p>It is given free of charge in medical offices or at home with a one-time purchase of services in the amount of more than $25 per person.</p>
+      <p>It is given free of charge in medical offices or at home with a one-time purchase of services in the amount of
+        more than $25 per person.</p>
     </div>
     <div class="col-4 test">
       <img src="../../assets/images/news-3.jpg" class="img-fluid" alt="">
       <h4>Silver card</h4>
-      <p>It is given free of charge in medical offices or at home with a one-time purchase of services in the amount of more than $25 per person.</p>
+      <p>It is given free of charge in medical offices or at home with a one-time purchase of services in the amount of
+        more than $25 per person.</p>
     </div>
   </div>
 </div>
@@ -117,5 +124,3 @@
     </div>
   </div>
 </div>
-
-
