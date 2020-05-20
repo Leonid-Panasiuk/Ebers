@@ -176,10 +176,6 @@ a:hover {
   transition: all .3s;
 }
 
-.cart-link span:hover {
-  color: red;
-}
-
 .cart-icon {
   color: #111;
   margin: 0 10px;
@@ -187,13 +183,19 @@ a:hover {
   width: 40px;
 }
 
-.cart-icon:hover {
-  transform: scale(1.1);
-}
-
 .basket {
   font-size: 17px;
   color: #333;
+}
+
+.basket-container {
+  transition: all .4s;
+}
+
+.basket-container:hover {
+  background: #f2f2f2;
+  padding: 0 15px;
+  border-radius: 10px;
 }
 
 footer {
@@ -204,7 +206,7 @@ footer {
 }
 
 footer img {
-  width: 100px;
+  width: 150px;
 }
 
 .footer-container {
