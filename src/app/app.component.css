@@ -188,7 +188,7 @@ a:hover {
 }
 
 .cart-icon:hover {
-  color: red;
+  transform: scale(1.1);
 }
 
 .basket {
@@ -199,6 +199,8 @@ a:hover {
 footer {
   background: linear-gradient(0deg, rgba(142, 227, 193, 1) 100%, rgba(228, 182, 14, 1) 100%, rgba(233, 177, 10, 1) 100%);
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 footer img {
