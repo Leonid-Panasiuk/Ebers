@@ -2,21 +2,21 @@
   <div class="slider">
     <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
       <div ngxSlickItem *ngFor="let slide of slides" class="slide">
-        <div *ngIf="slide.id==1" class="one-slide" class="img-fluid slide-img"
+        <div *ngIf="slide.id==1" class="one-slide" class="img-fluid slide-img-1"
           [ngStyle]="{ 'background-image': 'url(' + slide.img + ')'}">
           <div class="slider-text">
             <p>Декілька</p>
             <p>Слів</p>
           </div>
         </div>
-        <div *ngIf="slide.id==2" class="sec-slide" class="img-fluid slide-img"
+        <div *ngIf="slide.id==2" class="sec-slide" class="img-fluid slide-img-2"
           [ngStyle]="{ 'background-image': 'url(' + slide.img + ')'}">
           <div class="slider-text">
             <p>Декілька</p>
             <p>Слів</p>
           </div>
         </div>
-        <div *ngIf="slide.id==3" class="third-slide" class="img-fluid slide-img"
+        <div *ngIf="slide.id==3" class="third-slide" class="img-fluid slide-img-3"
           [ngStyle]="{ 'background-image': 'url(' + slide.img + ')'}">
           <div class="slider-text">
             <p>Декілька</p>
