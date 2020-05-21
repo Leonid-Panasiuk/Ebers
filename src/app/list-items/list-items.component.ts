@@ -28,7 +28,7 @@ export class ListItemsComponent implements OnInit {
     "dots": true,
     "infinite": true,
     "autoplay": true,
-    arrows: true,
+    "arrows": true,
     "autoplaySpeed": 1500
   };
 
