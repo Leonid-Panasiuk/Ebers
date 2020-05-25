@@ -23,9 +23,9 @@ export class ListItemsComponent implements OnInit {
     { img: "/assets/images/slick-3.jpg", id: 3 },
   ];
   slideConfig = {
-    // "slidesToShow": 1,
-    // "slidesToScroll": 1,
-    // "dots": true,
+    "slidesToShow": 1,
+    "slidesToScroll": 1,
+    "dots": true,
     // "infinite": true,
     // "autoplay": true,
     // "arrows": true,
