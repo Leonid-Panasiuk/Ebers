@@ -26,10 +26,10 @@ export class ListItemsComponent implements OnInit {
     "slidesToShow": 1,
     "slidesToScroll": 1,
     "dots": true,
-    // "infinite": true,
-    // "autoplay": true,
-    // "arrows": true,
-    // "autoplaySpeed": 2000
+    "infinite": true,
+    "autoplay": true,
+    "arrows": true,
+    "autoplaySpeed": 2000
   };
 
 }
