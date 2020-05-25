@@ -9,7 +9,8 @@ import {
    MatGridListModule,
    MatCardModule,
    MatMenuModule,
-   MatFormFieldModule
+   MatFormFieldModule,
+   MatInputModule,
 } from '@angular/material';
 
 import {MatTooltipModule} from '@angular/material/tooltip';
@@ -26,7 +27,8 @@ import {MatTooltipModule} from '@angular/material/tooltip';
        MatCardModule,
        MatMenuModule,
        MatFormFieldModule,
-       MatTooltipModule
+       MatTooltipModule,
+       MatInputModule
    ],
    exports: [
        MatToolbarModule,
@@ -39,7 +41,7 @@ import {MatTooltipModule} from '@angular/material/tooltip';
        MatCardModule,
        MatMenuModule,
        MatFormFieldModule,
-       MatTooltipModule
+       MatTooltipModule,
    ],
 })
 export class MaterialModule { }
