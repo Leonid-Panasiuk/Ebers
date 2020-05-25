@@ -30,5 +30,10 @@ export class ContactsComponent implements OnInit {
     phone: new FormControl('', [Validators.required])
   });
 
+  modalForm = new FormGroup({
+    modalName: new FormControl('', [Validators.required]),
+    modalPhone: new FormControl('', [Validators.required])
+  });
+
 
 }

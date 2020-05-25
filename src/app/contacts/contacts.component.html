@@ -30,7 +30,7 @@
 
         <!-- Name -->
         <div class="md-form input-with-pre-icon">
-          <input formControlName="name" type="text" id="prefixInside" class="form-control mb-4" placeholder="Ім'я*" required minlength="4">
+          <input formControlName="name" type="text" id="prefixInside" class="form-control mb-4" placeholder="Ім'я*" required minlength="3">
         </div>
 
         <!-- Phone -->
@@ -65,22 +65,24 @@
     </button>
   </div>
   <div class="modal-body">
-    <form>
+    <form [formGroup]="modalForm">
       <div class="input-group input-group-sm mb-3">
         <div class="input-group-prepend">
           <span class="input-group-text" id="inputGroup-sizing-sm">Ім'я</span>
         </div>
-        <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+        <input formControlName="modalName" type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" required>
       </div>
       <div class="input-group input-group-sm mb-3">
         <div class="input-group-prepend">
           <span class="input-group-text" id="inputGroup-sizing-sm">Телефон</span>
         </div>
-        <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+        <input formControlName="modalPhone" autocomplete="tel" type="tel" im-insert= "true" name="telphone" placeholder="888 888 8888" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" maxlength="10"  title="Ten digits code" required/>
+        <small>Формат: (097) 111 22 33</small> 
       </div>
     </form>
   </div>
   <div class="modal-footer">
-    <button type="button" class="btn btn-outline-dark modal-btn" (click)="c('Save click')">Відправити</button>
+    <div class="col-md-12 d-flex justify-content-center"><p class="errorMessage" style="color:red" *ngIf="!modalForm.valid">Заповніть обов'язкові поля поля ↑</p></div>
+    <button [disabled]="!modalForm.valid" type="submit" value="Submit" class="btn btn-outline-dark modal-btn">Відправити</button>
   </div>
 </ng-template>
