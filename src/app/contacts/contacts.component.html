@@ -1,3 +1,4 @@
+
 <div class="container">
   <div class="row">
     <div class="col-sm-12 main-content">
@@ -49,3 +50,37 @@
     </div>
   </div>
 </div>
+
+<div class="call-container">
+  <div (click)="open(content)" class="button_cont"><a class="call-button">Замовити дзвінок</a></div>
+</div>
+
+<!-- Button trigger modal -->
+
+<ng-template #content let-c="close" let-d="dismiss">
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Замовити дзвінок</h4>
+    <button type="button" class="close-button" aria-label="Close" (click)="d('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form>
+      <div class="input-group input-group-sm mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-sm">Ім'я</span>
+        </div>
+        <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+      </div>
+      <div class="input-group input-group-sm mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-sm">Телефон</span>
+        </div>
+        <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark modal-btn" (click)="c('Save click')">Відправити</button>
+  </div>
+</ng-template>

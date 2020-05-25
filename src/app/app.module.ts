@@ -20,6 +20,7 @@ import { RegexinComponent } from './regexin/regexin.component';
 import { FizormComponent } from './fizorm/fizorm.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { NgbModal, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -42,9 +43,10 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
-    SlickCarouselModule
+    SlickCarouselModule,
+    NgbModule
   ],
-  providers: [ProductsService, CartService],
+  providers: [ProductsService, CartService, NgbModal],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -14,6 +14,7 @@ import {
 } from '@angular/material';
 
 import {MatTooltipModule} from '@angular/material/tooltip';
+import {MatDialogModule} from '@angular/material/dialog';
 
 @NgModule({
    imports: [
@@ -28,7 +29,8 @@ import {MatTooltipModule} from '@angular/material/tooltip';
        MatMenuModule,
        MatFormFieldModule,
        MatTooltipModule,
-       MatInputModule
+       MatInputModule,
+       MatDialogModule
    ],
    exports: [
        MatToolbarModule,
