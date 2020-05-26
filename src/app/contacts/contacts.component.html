@@ -70,13 +70,13 @@
         <div class="input-group-prepend">
           <span class="input-group-text" id="inputGroup-sizing-sm">Ім'я</span>
         </div>
-        <input formControlName="modalName" type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" required>
+        <input class="modal-name" formControlName="modalName" type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" required>
       </div>
       <div class="input-group input-group-sm mb-3">
         <div class="input-group-prepend">
           <span class="input-group-text" id="inputGroup-sizing-sm">Телефон</span>
         </div>
-        <input formControlName="modalPhone" autocomplete="tel" type="tel" im-insert= "true" name="telphone" placeholder="888 888 8888" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" maxlength="10"  title="Ten digits code" required/>
+        <input class="modal-phone" formControlName="modalPhone" autocomplete="tel" type="tel"  name="telphone" placeholder="888 888 8888" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" maxlength="10"  title="Ten digits code" required/>
         <small>Формат: (097) 111 22 33</small> 
       </div>
     </form>

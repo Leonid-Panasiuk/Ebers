@@ -44,7 +44,7 @@ import { NgbModal, NgbModule } from '@ng-bootstrap/ng-bootstrap';
     FormsModule,
     ReactiveFormsModule,
     SlickCarouselModule,
-    NgbModule
+    NgbModule,
   ],
   providers: [ProductsService, CartService, NgbModal],
   bootstrap: [AppComponent]

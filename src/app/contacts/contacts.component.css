@@ -164,3 +164,7 @@ small {
   align-items: center;
   margin-left: 6px;
 }
+
+.modal-phone, .modal-name {
+  border: 2px solid #f0f0f0;
+}
