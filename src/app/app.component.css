@@ -181,6 +181,7 @@ a:hover {
 .basket {
   font-size: 17px;
   color: #333;
+  margin-right: 7px;
 }
 
 .basket-container {
