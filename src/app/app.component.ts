@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CartService } from './cart.service';
 import { NgbModalConfig, NgbModal } from '@ng-bootstrap/ng-bootstrap'
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -21,5 +22,15 @@ export class AppComponent {
   onActivate(event) {
     window.scroll(100, 100);
   }
+
+  popupForm = new FormGroup({
+    name: new FormControl('', [Validators.required]),
+    phone : new FormControl('', [
+      Validators.required,
+      Validators.pattern("^[0-9]*$"),
+      Validators.minLength(8),
+    ])
+    
+  });
 }
 
