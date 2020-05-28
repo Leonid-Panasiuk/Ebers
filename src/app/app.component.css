@@ -537,10 +537,11 @@ textarea.input2+.focus-input2::after {
   align-items: center;
   background: rgba(142, 227, 193, 1);
   padding-bottom: 40px;
+  padding-top: 10px;
 }
 
 .burger-logo {
-  width: 30px;
+  width: 50px;
   position: absolute;
   left: 20px;
 }
