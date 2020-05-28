@@ -307,15 +307,26 @@ footer img {
   margin:  0 auto;
 }
 
+
+.modal-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .close-modal {
   width: 10px;
 }
 
 input {
 	outline: none;
-	border: none;
+  border: none;
+  text-align: center;
 }
 
+.input2:focus {
+  color: rgb(0, 0, 0);
+}
 
 .close-button {
 	outline: none !important;
@@ -324,7 +335,13 @@ input {
 }
 
 .close-modal {
+  font-size: 25px;
+}
+
+.fa-mobile-alt {
+  color: gray;
   font-size: 20px;
+  margin-left: 8px;
 }
 
 button:hover {

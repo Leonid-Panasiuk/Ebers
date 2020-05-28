@@ -53,7 +53,7 @@
 
 <ng-template #content let-c="close" let-d="dismiss">
   <div class="modal-header">
-    <h4 class="modal-title" id="modal-basic-title">Замовити дзвінок</h4>
+    <h4 class="modal-title" id="modal-basic-title">Замовити дзвінок <i class="fas fa-mobile-alt"></i></h4>
     <button type="button" class="close-button" aria-label="Close" (click)="d('Cross click')">
       <span class="close-modal" aria-hidden="true">&times;</span>
     </button>
@@ -61,11 +61,11 @@
   <div class="modal-body">
     <form class="contact2-form validate-form">
       <div class="wrap-input2 validate-input">
-        <input class="input2" type="text" name="name">
+        <input autocomplete="off" class="input2" type="text" name="name">
         <span class="focus-input2" data-placeholder="Ім'я"></span>
       </div>
       <div class="wrap-input2 validate-input">
-        <input class="input2" type="text" name="phone">
+        <input autocomplete="off" class="input2" pattern="[0-9]{10}" name="phone">
         <span class="focus-input2" data-placeholder="Телефон"></span>
       </div>
       <div class="modal-footer">

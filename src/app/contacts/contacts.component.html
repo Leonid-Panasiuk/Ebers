@@ -30,11 +30,11 @@
 
         <!-- Name -->
         <div class="md-form input-with-pre-icon">
-          <input formControlName="name" type="text" id="prefixInside" class="form-control mb-4" placeholder="Ім'я*" required minlength="3">
+          <input autocomplete="off" formControlName="name" type="text" id="prefixInside" class="form-control mb-4" placeholder="Ім'я*" required minlength="3">
         </div>
 
         <!-- Phone -->
-        <input formControlName="phone" type="text" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Телефон*" required>
+        <input autocomplete="off" formControlName="phone" type="text" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Телефон*" required>
 
         <!-- Textarea -->
 
@@ -76,7 +76,7 @@
         <div class="input-group-prepend">
           <span class="input-group-text" id="inputGroup-sizing-sm">Телефон</span>
         </div>
-        <input class="modal-phone" formControlName="modalPhone" autocomplete="tel" type="tel"  name="telphone" placeholder="888 888 8888" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" maxlength="10"  title="Ten digits code" required/>
+        <input autocomplete="off" class="modal-phone" formControlName="modalPhone" name="telphone"  pattern="[0-9]{3}[0-9]{3}[0-9]{4}" maxlength="10" required/>
         <small>Формат: (097) 111 22 33</small> 
       </div>
     </form>
