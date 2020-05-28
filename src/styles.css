@@ -22,6 +22,10 @@ body {
   outline: none!important;
 }
 
+.slick-slider {
+  outline: none!important;
+}
+
 @font-face
 {
     font-family: 'slick';
