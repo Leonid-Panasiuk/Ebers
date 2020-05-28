@@ -219,4 +219,12 @@ a:hover {
   .slider-text p {
     padding-left: 0;
   }
+
+  .why-us img {
+    max-width: 30%;
+  }
+
+  .why-us p {
+    font-size: 15px;
+  }
 }
