@@ -21,6 +21,20 @@
   </div>
 </div>
 
+<div class="burger-wrap">
+  <button class="button-burger" mat-button [matMenuTriggerFor]="menu">
+    <img class="burger-img" src="../assets/images/Menu-512.webp" alt="">
+  </button>
+  <mat-menu class="burger-menu" #menu="matMenu">
+    <ul class="burger-links-wrap">
+      <li><a class="burger-item" routerLink="/products">Продукція</a></li>
+      <li><a class="burger-item" routerLink="/about">Про компанію</a></li>
+      <li><a class="burger-item" routerLink="/contacts">Контакти</a></li>
+      <li><a class="burger-item" routerLink="/delivery">Доставка і оплата</a></li>
+      <li><a class="burger-item" routerLink="/">Статті та новини</a></li>
+    </ul>
+  </mat-menu>
+</div>
 
 
 <div class="top-2">
@@ -59,9 +73,9 @@
     </button>
   </div>
   <div class="modal-body">
-    <form  [formGroup]="popupForm" class="contact2-form validate-form">
+    <form [formGroup]="popupForm" class="contact2-form validate-form">
       <div class="wrap-input2 validate-input">
-        <input  formControlName="name" autocomplete="off" class="input2" type="text" name="name">
+        <input formControlName="name" autocomplete="off" class="input2" type="text" name="name">
         <span class="focus-input2" data-placeholder="Ім'я*"></span>
       </div>
       <div class="wrap-input2 validate-input">
@@ -69,11 +83,12 @@
         <span class="focus-input2" data-placeholder="Телефон [0-9]*"></span>
       </div>
       <div class="modal-footer">
-        <button [disabled]="!popupForm.valid" (click)="d('Cross click')" type="submit" value="Submit" class="btn btn-outline-dark modal-btn">Відправити</button>
+        <button [disabled]="!popupForm.valid" (click)="d('Cross click')" type="submit" value="Submit"
+          class="btn btn-outline-dark modal-btn">Відправити</button>
       </div>
     </form>
   </div>
- 
+
 </ng-template>
 
 <div class="top-3">
@@ -110,3 +125,4 @@
       здоров'я.<br><span>Бажаємо вам здоров'я!</span></p>
   </div>
 </footer>
+

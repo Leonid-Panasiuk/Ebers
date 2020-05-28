@@ -245,6 +245,13 @@ footer img {
 }
 
 
+@media (max-width: 1920px) {
+  .button-burger {
+    display: none;
+  }
+
+}
+
 @media(max-width: 900px) {
   .footer-left {
     display: flex;
@@ -262,8 +269,16 @@ footer img {
     flex-direction: column;
   }
 
+  .button-burger {
+    display: flex;
+  }
+
+  .nav {
+    display: none;
+  }
+
   .shaking-phone {
-    width: 15%;
+    width: 10%;
   }
 
   .logo {
@@ -273,7 +288,7 @@ footer img {
   }
 
   .main-logo {
-    width: 70%;
+    width: 50%;
   }
 
 
@@ -289,16 +304,24 @@ footer img {
     text-align: center;
   }
 
-  .nav-items li a {
-    font-size: 15px;
-  }
-
 }
 
 @media(max-width: 560px) {
   .nav-items {
     display: flex;
     flex-direction: column;
+  }
+
+  .nav-items a {
+    font-size: 14px;
+  }
+
+  .main-logo {
+    width: 75%;
+  }
+
+  .header-text {
+    font-size: 15px;
   }
 }
 
@@ -514,4 +537,36 @@ textarea.input2+.focus-input2::after {
 .c .top-sec {
   margin-top: -30px;
   margin-bottom: 15px;
+}
+
+.button-burger:focus {
+  outline: none;
+}
+
+.burger-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(142, 227, 193, 1);
+}
+
+.burger-menu ul {
+  list-style: none;
+}
+
+.burger-links-wrap li {
+  margin: 15px 15px;
+  list-style: none;
+}
+
+.burger-item {
+  color: #000;
+}
+
+.burger-item:hover {
+  background: #f2f2f2;
+}
+
+.burger-img {
+  width: 30px;
 }
