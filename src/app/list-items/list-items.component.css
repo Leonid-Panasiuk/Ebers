@@ -46,30 +46,6 @@ a:hover {
   line-height: 1.3;
 }
 
-/* .list-items-bg {
-  background-image: url(/../assets/images/list-items-bg.jpg);
-  background-position: top right;
-  background-size: cover;
-  background-repeat: no-repeat;
-} */
-
-/* .list-items-bg {
-  position: relative;
-}
-
-.list-items-bg::after {
-  content: "";
-  background: url(/../assets/images/list-items-bg.jpg) no-repeat 50% 50%;
-  background-size: cover;
-  opacity: 0.6;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
-} */
-
 
 .mortar {
   

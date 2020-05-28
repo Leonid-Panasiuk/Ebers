@@ -254,7 +254,6 @@ footer img {
   }
 }
 
-
 @media only screen and (max-width: 768px) {
 
   footer,
@@ -262,6 +261,21 @@ footer img {
     display: flex;
     flex-direction: column;
   }
+
+  .shaking-phone {
+    width: 15%;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-logo {
+    width: 70%;
+  }
+
 
   .footer-container p {
     max-width: 100%;
@@ -305,7 +319,7 @@ footer img {
 /* POPUP FORMS */
 
 .modal-btn {
-  margin:  0 auto;
+  margin: 0 auto;
 }
 
 
@@ -320,7 +334,7 @@ footer img {
 }
 
 input {
-	outline: none;
+  outline: none;
   border: none;
   text-align: center;
 }
@@ -330,9 +344,9 @@ input {
 }
 
 .close-button {
-	outline: none !important;
-	border: none;
-	background: transparent;
+  outline: none !important;
+  border: none;
+  background: transparent;
 }
 
 .close-modal {
@@ -346,31 +360,31 @@ input {
 }
 
 button:hover {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 iframe {
-	border: none !important;
+  border: none !important;
 }
 
 
 .bg-contact2 {
-  width: 100%;  
+  width: 100%;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 }
 
 .container-contact2 {
-  width: 100%;  
+  width: 100%;
   min-height: 100vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   padding: 15px;
-  background: rgba(219,21,99,0.8);
-  background: linear-gradient(45deg, rgba(213,0,125,0.8), rgba(229,57,53,0.8));
+  background: rgba(219, 21, 99, 0.8);
+  background: linear-gradient(45deg, rgba(213, 0, 125, 0.8), rgba(229, 57, 53, 0.8));
 }
 
 .wrap-contact2 {
@@ -429,7 +443,7 @@ iframe {
   width: 0;
   height: 2px;
   transition: all 0.4s;
-  background: rgba(219,21,99,1);
+  background: rgba(219, 21, 99, 1);
   background: linear-gradient(45deg, #d5007d, #e53935);
 }
 
@@ -450,7 +464,7 @@ input.input2 {
   height: 45px;
 }
 
-input.input2 + .focus-input2::after {
+input.input2+.focus-input2::after {
   top: 16px;
   left: 0;
 }
@@ -461,23 +475,43 @@ textarea.input2 {
   padding-bottom: 13px;
 }
 
-textarea.input2 + .focus-input2::after {
+textarea.input2+.focus-input2::after {
   top: 16px;
   left: 0;
 }
 
-.input2:focus + .focus-input2::after {
+.input2:focus+.focus-input2::after {
   top: -13px;
 }
 
-.input2:focus + .focus-input2::before {
+.input2:focus+.focus-input2::before {
   width: 100%;
 }
 
-.has-val.input2 + .focus-input2::after {
+.has-val.input2+.focus-input2::after {
   top: -13px;
 }
 
-.has-val.input2 + .focus-input2::before {
+.has-val.input2+.focus-input2::before {
   width: 100%;
+}
+
+
+.c {
+  padding: 15px;
+  margin-top: 30px;
+  box-shadow: 0 0 16px 1px rgba(0, 0, 0, 0.1);
+}
+
+.c img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 3px;
+  /* background-color: white; */
+  box-shadow: 0 3px 20px 11px rgba(0, 0, 0, 0.09);
+}
+
+.c .top-sec {
+  margin-top: -30px;
+  margin-bottom: 15px;
 }
