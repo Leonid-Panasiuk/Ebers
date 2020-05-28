@@ -15,7 +15,10 @@ export class CartItemsComponent implements OnInit {
 
   user = {
     name: '',
-    phone: ''
+    phone: '',
+    city: '',
+    department: '',
+    street: ''
   }
 
   formValue : FormGroup;
@@ -28,7 +31,10 @@ export class CartItemsComponent implements OnInit {
 
   userForm = new FormGroup({
     name: new FormControl('', [Validators.required]),
-    phone: new FormControl('', [Validators.required])
+    phone: new FormControl('', [Validators.required]),
+    city: new FormControl('', [Validators.required]),
+    department: new FormControl('', [Validators.required]),
+    street: new FormControl('', [Validators.required])
   });
   onSubmit() {
     console.log(this.userForm.value);

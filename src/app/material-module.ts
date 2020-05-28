@@ -30,7 +30,7 @@ import {MatDialogModule} from '@angular/material/dialog';
        MatFormFieldModule,
        MatTooltipModule,
        MatInputModule,
-       MatDialogModule
+       MatDialogModule,
    ],
    exports: [
        MatToolbarModule,
