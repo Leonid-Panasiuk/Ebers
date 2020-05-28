@@ -21,43 +21,53 @@ const routes: Routes = [
     },
     {
         path: 'list-items',
-        component: ListItemsComponent
+        component: ListItemsComponent,
+        data: {title: 'Головна'}
     },
     {
         path: 'cart-items',
-        component: CartItemsComponent
+        component: CartItemsComponent,
+        data: {title: 'Кошик'}
     },
     {
         path: 'delivery',
-        component: DeliveryComponent
+        component: DeliveryComponent,
+        data: {title: 'Доставка і оплата'}
     },
     {
         path: 'products',
-        component: ProductsComponent
+        component: ProductsComponent,
+        data: {title: 'Продукція'}
     },
     {
         path: 'about',
-        component: AboutComponent
+        component: AboutComponent,
+        data: {title: 'Про нас'}
     },
     {
         path: 'contacts',
-        component: ContactsComponent
+        component: ContactsComponent,
+        data: {title: 'Контакти'}
     },
     {
         path: 'giluron',
-        component: GiluronComponent
+        component: GiluronComponent,
+        data: {title: 'Гілурон'}
     },
     {
         path: 'normera',
-        component: NormeraComponent
+        component: NormeraComponent,
+        data: {title: 'Нормера'}
     },
     {
         path: 'regexin',
-        component: RegexinComponent
+        component: RegexinComponent,
+        data: {title: 'Регексін'}
     },
     {
         path: 'fizorm',
-        component: FizormComponent
+        component: FizormComponent,
+        data: {title: 'Фізорм'}
     },
     // {
     //     path: '',
