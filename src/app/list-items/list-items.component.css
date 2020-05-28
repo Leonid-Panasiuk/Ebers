@@ -29,6 +29,7 @@ a:hover {
   height: 600px;
   background-position: center;
   background-size: cover;
+  outline: none;
 }
 
 .slide-img-1:focus, .slide-img-2:focus, .slide-img-3:focus {
