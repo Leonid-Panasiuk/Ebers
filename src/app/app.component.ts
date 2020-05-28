@@ -19,9 +19,9 @@ export class AppComponent {
     this.modalService.open(content);
   }
 
-  onActivate(event) {
-    window.scroll(100, 100);
-  }
+  // onActivate(event) {
+  //   window.scroll(100, 100);
+  // }
 
   popupForm = new FormGroup({
     name: new FormControl('', [Validators.required]),
