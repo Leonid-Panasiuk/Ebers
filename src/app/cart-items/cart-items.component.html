@@ -32,6 +32,7 @@
     </div>
     <div class="col-12 col-md-4 col-lg-4 col-xl-4">
       <div class="total-price">Загальна ціна: {{cartService.getTotalPrice()}}грн</div>
+      <p class="hint-forms">* Всі поля, позначені зірочкою, обов’язкові до заповнення.</p>
       <form [formGroup]="userForm" (submit)="onSubmit()" class="mail-form" method="get">
         <div class="row">
           <div class="col-md-12 ">

@@ -37,7 +37,6 @@ a:hover {
   text-align: center;
   font-weight: 500;
   font-size: 30px;
-  padding-bottom: 50px;
 }
 
 .cart-input {
@@ -165,4 +164,12 @@ input:focus {
 .errorMessage {
   font-size: 20px;
   padding-bottom: 10px;
+}
+
+
+.hint-forms {
+  text-align: center;
+  margin: 15px 0;
+  border: 1px solid #ff4b5a;
+  padding: 20px;
 }
