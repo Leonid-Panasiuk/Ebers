@@ -536,7 +536,7 @@ textarea.input2+.focus-input2::after {
   justify-content: flex-end;
   align-items: center;
   background: rgba(142, 227, 193, 1);
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   padding-top: 10px;
 }
 
