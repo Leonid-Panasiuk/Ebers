@@ -42,7 +42,7 @@ const routes: Routes = [
     {
         path: 'about',
         component: AboutComponent,
-        data: {title: 'Про нас'}
+        data: {title: 'Про компанію'}
     },
     {
         path: 'contacts',

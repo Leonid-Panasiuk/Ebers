@@ -20,11 +20,15 @@ a:hover {
   outline: none;
 }
 
-.one-slide:focus, .sec-slide:focus, .third-slide:focus {
- outline: none;
+.one-slide:focus,
+.sec-slide:focus,
+.third-slide:focus {
+  outline: none;
 }
 
-.slide-img-1, .slide-img-2, .slide-img-3 {
+.slide-img-1,
+.slide-img-2,
+.slide-img-3 {
   width: 100%;
   height: 600px;
   background-position: center;
@@ -32,7 +36,9 @@ a:hover {
   outline: none;
 }
 
-.slide-img-1:focus, .slide-img-2:focus, .slide-img-3:focus {
+.slide-img-1:focus,
+.slide-img-2:focus,
+.slide-img-3:focus {
   outline: none;
 }
 
@@ -61,7 +67,7 @@ a:hover {
 
 
 .mortar {
-  
+
   margin-right: 12px;
   background-color: #fff;
   color: rgb(114, 145, 211);
@@ -212,8 +218,41 @@ a:hover {
   margin-bottom: 12px;
 }
 
+.how-to {
+  text-align: center;
+}
 
-@media  (max-width: 600px) {
+.how-to h4 {
+  margin-bottom: 10px;
+  color: #585f73;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 49px
+}
+
+.how-to p {
+  color: #585f73;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+.how-to img {
+  width: 70%;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.feedback {
+  font-weight: normal;
+  font-size: 14px!important;
+}
+
+
+@media (max-width: 600px) {
   .slide-img-1 {
     background-position: right 15% bottom 45%;
     background-repeat: no-repeat;
@@ -239,7 +278,8 @@ a:hover {
     padding-left: 0;
   }
 
-  .why-us img {
+  .why-us img,
+  .how-to img {
     max-width: 30%;
   }
 

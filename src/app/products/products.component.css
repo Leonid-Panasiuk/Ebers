@@ -89,13 +89,17 @@ a:hover {
   border: none;
   transition: all .5s;
   margin-bottom: 10px;
+  border: 1px solid #f0f0f0;
 }
 
 .name-of-product:hover {
   background: rgb(21, 151, 86);
   box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.75);
   color: black;
-  border: none;
+}
+
+.name-of-product:focus {
+  outline: none;
 }
 
 .desc {
@@ -126,9 +130,6 @@ a:hover {
   color: goldenrod;
 }
 
-/* .card-product:hover {
-  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.75);
-} */
 
 .card-product a {
   color: #1660C9;

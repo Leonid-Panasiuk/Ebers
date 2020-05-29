@@ -173,3 +173,16 @@ input:focus {
   border: 1px solid #ff4b5a;
   padding: 20px;
 }
+
+.price-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-price {
+  color: rgb(0, 129, 58);
+  padding: 8px;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+}
