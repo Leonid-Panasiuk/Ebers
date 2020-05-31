@@ -186,3 +186,7 @@ input:focus {
   border: 1px solid #bbb;
   border-radius: 8px;
 }
+
+/* input:required:invalid {
+  
+} */

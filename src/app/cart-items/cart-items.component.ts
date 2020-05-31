@@ -27,6 +27,8 @@ export class CartItemsComponent implements OnInit {
 
   ngOnInit() {
     this.cart = this.cartService.getCartItems();
+    console.log(this.cart);
+    console.log('Загальна ціна замовлення: ' + this.cartService.getTotalPrice());
   }
 
   userForm = new FormGroup({
