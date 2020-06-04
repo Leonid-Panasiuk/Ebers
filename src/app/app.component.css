@@ -45,9 +45,10 @@ a:hover {
   padding: 30px 17px 10px;
 }
 
-/* .top-2 .container img {
+.main-logo {
   width: 140px;
-} */
+  height: 140px;
+}
 
 
 .header-text {
@@ -295,7 +296,7 @@ footer img {
   }
 
   .main-logo {
-    width: 50%;
+    width: 30%;
   }
 
 
@@ -324,7 +325,7 @@ footer img {
   }
 
   .main-logo {
-    width: 75%;
+    width: 35%;
   }
 
   .header-text {
