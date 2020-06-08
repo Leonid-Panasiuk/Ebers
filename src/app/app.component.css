@@ -45,11 +45,16 @@ a:hover {
   padding: 30px 17px 10px;
 }
 
-.main-logo {
-  width: 140px;
-  height: 140px;
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
+.main-logo {
+  width: 70%;
+}
 
 .header-text {
   font-size: 20px;
@@ -289,12 +294,7 @@ footer img {
     width: 10%;
   }
 
-  .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
+  
   .main-logo {
     width: 30%;
   }
@@ -325,7 +325,7 @@ footer img {
   }
 
   .main-logo {
-    width: 35%;
+    width: 50%;
   }
 
   .header-text {
