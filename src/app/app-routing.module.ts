@@ -10,6 +10,10 @@ import { GiluronComponent } from './giluron/giluron.component';
 import { NormeraComponent } from './normera/normera.component';
 import { RegexinComponent } from './regexin/regexin.component';
 import { FizormComponent } from './fizorm/fizorm.component';
+import { ArticlesComponent } from './articles/articles.component';
+import { AmarantComponent } from './news/amarant/amarant.component';
+import { NettleComponent } from './news/nettle/nettle.component';
+import { AloeComponent } from './news/aloe/aloe.component';
 
 
 
@@ -69,6 +73,27 @@ const routes: Routes = [
         component: FizormComponent,
         data: {title: 'Фізорм'}
     },
+    {
+        path: 'articles',
+        component: ArticlesComponent,
+        data: {title: 'Статті та новини'}
+    },
+    {
+        path: 'amarant',
+        component: AmarantComponent,
+        data: {title: 'Амарант'}
+    },
+    {
+        path: 'nettle',
+        component: NettleComponent,
+        data: {title: 'Кропива'}
+    },
+    {
+        path: 'aloe',
+        component: AloeComponent,
+        data: {title: 'Алое'}
+    },
+    
     // {
     //     path: '',
     //     redirectTo: 'list-items',

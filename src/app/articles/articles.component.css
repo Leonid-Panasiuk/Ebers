@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    transition: all .3s;
+    font-size: 18px;
+}
+
+a:hover {
+    text-decoration: none;
+    color: red;
+}
+
+.line {
+    height: 1px;
+    width: 100%;
+    background: #bbb;
+    margin: 15px auto 20px;
+}
+
+.line-50 {
+    height: 1px;
+    width: 50%;
+    background: #bbb;
+    margin: 15px auto 20px
+}
+
+h1 {
+    text-align: center;
+    font-weight: 100;
+    margin-top: 20px;
+}
+
+h5 {
+    text-align: center;
+    margin: 20px 0;
+    border-top: 1px solid #bbb;
+}
+
+button {
+    margin: 20px 0;
+}

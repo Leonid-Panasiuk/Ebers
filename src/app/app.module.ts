@@ -21,6 +21,10 @@ import { FizormComponent } from './fizorm/fizorm.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { NgbModal, NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ArticlesComponent } from './articles/articles.component';
+import { AmarantComponent } from './news/amarant/amarant.component';
+import { NettleComponent } from './news/nettle/nettle.component';
+import { AloeComponent } from './news/aloe/aloe.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +39,10 @@ import { NgbModal, NgbModule } from '@ng-bootstrap/ng-bootstrap';
     NormeraComponent,
     RegexinComponent,
     FizormComponent,
+    ArticlesComponent,
+    AmarantComponent,
+    NettleComponent,
+    AloeComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,17 @@
+h3 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+
+p {
+    text-align: justify;
+}
+
+.link {
+    border-bottom: 1px solid #bbb;
+}
+
+span {
+    margin: 0 15px;
+}
