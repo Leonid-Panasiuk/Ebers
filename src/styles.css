@@ -14,18 +14,6 @@ body {
   height: 100%;
 }
 
-.slick-list:focus {
-  outline: none!important;
-}
-
-.slick-list {
-  outline: none!important;
-}
-
-.slick-slider {
-  outline: none!important;
-}
-
 @font-face
 {
     font-family: 'slick';
