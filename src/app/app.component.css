@@ -39,6 +39,7 @@ a:hover {
   background: linear-gradient(0deg, rgba(142, 227, 193, 1) 100%, rgba(228, 182, 14, 1) 100%, rgba(233, 177, 10, 1) 100%);
   border-bottom-right-radius: 400px 30px;
   border-bottom-left-radius: 400px 30px;
+  padding-bottom: 20px;
 }
 
 .top-2 .container {
