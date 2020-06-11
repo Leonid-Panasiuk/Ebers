@@ -11,20 +11,10 @@ a:hover {
 .slider {
   margin-top: 20px;
   overflow: hidden;
-  touch-action: none;
-  outline: none;
   cursor: pointer;
 }
 
-.slider:focus {
-  outline: none;
-}
 
-.one-slide:focus,
-.sec-slide:focus,
-.third-slide:focus {
-  outline: none;
-}
 
 .slide-img-1,
 .slide-img-2,
