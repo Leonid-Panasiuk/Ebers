@@ -21,7 +21,7 @@
               (change)="cartService.quantityChanged()" [(ngModel)]="cartItem.quantity" /></div>
         </div>
         <div class="col-lg-2 col-md-3 col-12 d-flex justify-content-center align-items-center col-cart">
-          <div class="cart-text">Ціна: {{cartItem.product.price * cartItem.quantity}}грн</div>
+          <div  class="cart-text">Ціна: {{cartItem.product.price * cartItem.quantity}}грн</div>
         </div>
         <div class="col-lg-2 col-md-3 col-12 d-flex justify-content-center align-items-center col-cart">
           <button (click)="cartService.removeFromCart(i)" class="btn btn-danger del-btn">Видалити</button>
